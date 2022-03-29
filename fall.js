@@ -40,6 +40,7 @@ function fall(info) {
       heightArr[minIndex] = minHeight + gap + height;
     }
   }
+  document.querySelectorAll(info.parent_el)[0].style.height = Math.max(...heightArr) + 'px';
   // 获取滚动条的宽度
   function getScrollbarWidth() {
     const oDiv = document.createElement('div');//创建一个div
